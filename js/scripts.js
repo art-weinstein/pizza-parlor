@@ -44,4 +44,6 @@ $(document).ready(function(){
   });
 });
 
+// Will later experiment with either pushing toppings from properties of a topping object to a pizza.
+//Want to experiment with displaying toppings based on their types (meat and veggies) without creating seperate properties.
 
