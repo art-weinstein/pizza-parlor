@@ -4,11 +4,12 @@ function Pizza (meat, veggies){
   this.veggies = veggies;
 }
 
-Pizza.prototype.addToppings = function(topping){
-  this.toppings[topping.meatTopping] = topping
+Pizza.prototype.price = function(){
+  let pizzaMeat = this.meat.length;
+  let pizzaVeggies = this.veggies.length;
+  return 10 + (pizzaMeat * 2) + (pizzaVeggies * 2);
+
 }
-
-
 
 // UI Logic
 $(document).ready(function(){
@@ -23,8 +24,10 @@ $(document).ready(function(){
       veggies.push($(this).val());
     });
     let orderPizza = new Pizza(meat, veggies);
+    let pizzaCost = orderPizza.price();
     $(".meat").text(orderPizza.meat);
     $(".veggies").text(orderPizza.veggies);
+    $(".cost").text(pizzaCost);
   });
 });
 
