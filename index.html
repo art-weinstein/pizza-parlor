@@ -9,28 +9,36 @@
 </head>
 <body>
   <div class = "container">
-    <h1>Build your pizza!</h1>
-    <h3>Small pizzas</h3>
-    <ul>
-      <li><span class = "important">$12.00 plus $2.00 per topping</span></li>
-    </ul>
-    <h3>Medium Pizzas</h3>
-    <ul>
-      <li><span class = "important">$14.00 plus $3.00 per topping</span></li>
-    </ul>
-    <h3>Large Pizzas</h3>
-    <ul>
-      <li><span class = "important">$16.00 plus $3.50 per topping</span></li>
-    </ul>
+      <h1>Build your pizza!</h1>
+      <div class = "costGuide">
+      <h3>Small pizzas</h3>
+      <ul>
+        <li><span class = "important">$12.00 plus $2.00 per topping</span></li>
+      </ul>
+      <h3>Medium Pizzas</h3>
+      <ul>
+        <li><span class = "important">$14.00 plus $3.00 per topping</span></li>
+      </ul>
+      <h3>Large Pizzas</h3>
+      <ul>
+        <li><span class = "important">$16.00 plus $3.50 per topping</span></li>
+      </ul>
+    </div>
     <form id="order">
       <span class = "important"><label for="size">Select your size:</label></span>
-      <select class ="form-control" id="size">
-        <option>Small</option>
-        <option>Medium</option>
-        <option>Large</option>
-      </select>
+        <select class ="form-control" id="size">
+          <option>Small</option>
+          <option>Medium</option>
+          <option>Large</option>
+        </select>
+      <span class = "important"><label for="Extra Cheese">Extra Cheese</label></span><br>
+      <input type="checkbox" name="topping" value="Mozzarella"> Mozzarella<br>
+      <input type="checkbox" name="topping" value="Provolone"> Provolone<br>
+      <input type="checkbox" name="topping" value="Parmesan"> Parmesan<br>
       <span class = "important"><label for="meat">Meats</label></span><br>
       <input type="checkbox" name="topping" value="Pepperoni"> Pepperoni<br>
+      <input type="checkbox" name="topping" value="Canadian Bacon"> Canadian Bacon<br>
+      <input type="checkbox" name="topping" value="Chicken"> Chicken<br>
       <input type="checkbox" name="topping"value="Italian Sausage"> Italian Sausage<br>
       <input type="checkbox" name="topping" value="Bacon"> Bacon<br>
       <span class = "important"><label for="veggies">Veggies</label></span><br>
@@ -46,8 +54,8 @@
     <p>Toppings: <span class = "toppings"></span></p>
     <!-- I originally wanted to seperate a list of meats and veggies, I could create
     a seperate property for each, but I was wondering if I could do it within one topping
-    property. -->
-    <!-- <p>Meat(s): <span class="meat"></span></p>
+    property.
+    <p>Meat(s): <span class="meat"></span></p>
     <p>Veggie(s): <span class ="veggies"></span></p> -->
     <p>Cost $<span class = "initialCost">0.00 </span><span class = "cost"></span></p>
   </div>

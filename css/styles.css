@@ -5,3 +5,13 @@
 .initialCost {
   display: inline;
 }
+
+.costGuide {
+  float: right;
+}
+#size {
+  font-weight: bolder;
+  width: 150px;
+  height: 40px;
+  padding: 5px;
+}

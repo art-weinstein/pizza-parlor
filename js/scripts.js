@@ -9,13 +9,13 @@ Pizza.prototype.price = function(){
   let pizzaTopping = this.toppings.length;
   let pizzaPrice = 0;
   if (pizzaSize === "Small"){
-    pizzaPrice = 12 + (pizzaTopping * 2); 
+    pizzaPrice = 12 + (pizzaTopping * 2) - 2; 
     return  pizzaPrice;
   } else if (pizzaSize === "Medium"){
-    pizzaPrice = 14 + (pizzaTopping * 3); 
+    pizzaPrice = 14 + (pizzaTopping * 3) - 3; 
     return  pizzaPrice;
   } else {
-    pizzaPrice = 16 + (pizzaTopping * 3.5); 
+    pizzaPrice = 16 + (pizzaTopping * 3.5) - 3.5; 
     return  pizzaPrice;
   }
 }
