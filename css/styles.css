@@ -1,3 +1,7 @@
 .important {
   font-weight: bolder;
 }
+
+.initialCost {
+  display: inline;
+}

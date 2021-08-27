@@ -18,22 +18,26 @@
         <option>Large</option>
       </select>
       <span class = "important"><label for="meat">Meats</label></span><br>
-      <input type="checkbox" name="meat" value="Pepperoni"> Pepperoni<br>
-      <input type="checkbox" name="meat" value="Italian Sausage"> Italian Sausage<br>
-      <input type="checkbox" name="meat" value="Bacon"> Bacon<br>
+      <input type="checkbox" name="topping" value="Pepperoni"> Pepperoni<br>
+      <input type="checkbox" name="topping"value="Italian Sausage"> Italian Sausage<br>
+      <input type="checkbox" name="topping" value="Bacon"> Bacon<br>
       <span class = "important"><label for="veggies">Veggies</label></span><br>
-      <input type="checkbox" name="veggies" value="Spinach"> Spinach<br>
-      <input type="checkbox" name="veggies" value="Kale"> Kale<br>
-      <input type="checkbox" name="veggies" value="Mushrooms"> Mushrooms<br>
-      <input type="checkbox" name="veggies" value="Olives"> Olives<br>
-      <input type="checkbox" name="veggies" value="Peppers"> Peppers<br>
+      <input type="checkbox" name="topping" value="Spinach"> Spinach<br>
+      <input type="checkbox" name="topping" value="Kale"> Kale<br>
+      <input type="checkbox" name="topping" value="Mushrooms"> Mushrooms<br>
+      <input type="checkbox" name="topping" value="Olives"> Olives<br>
+      <input type="checkbox" name="topping" value="Peppers"> Peppers<br>
       <button class = "button" type = "submit">Order your pizza!</button>
     </form>
     <p>Your order:</p>
     <p>Size: <span class = "size"></span></p>
-    <p>Meat(s): <span class="meat"></span></p>
-    <p>Veggie(s): <span class ="veggies"></span></p>
-    <p>Total: <span class = "cost"></span></p>
+    <p>Toppings: <span class = "toppings"></span></p>
+    <!-- I originally wanted to seperate a list of meats and veggies, I could create
+    a seperate property for each, but I was wondering if I could do it within one topping
+    property. -->
+    <!-- <p>Meat(s): <span class="meat"></span></p>
+    <p>Veggie(s): <span class ="veggies"></span></p> -->
+    <p>Cost $<span class = "initialCost">0.00 </span><span class = "cost"></span></p>
   </div>
 </body>
 </html>
