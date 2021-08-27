@@ -3,6 +3,10 @@ body {
   background-color: rgb(78, 3, 3);
 }
 
+#h1Shadow {
+  text-shadow: 10px 4px 4px #110f0f, 6px 8px 8px rgb(185, 9, 9);
+}
+
 .important {
   font-weight: bolder;
 }
@@ -30,6 +34,7 @@ body {
   margin: 45px;
   background-color: rgb(27, 4, 90);
   padding: 7px;
+  box-shadow: 10px 5px 5px rgb(138, 3, 3);
 }
 
 .cheese{
