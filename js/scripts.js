@@ -10,7 +10,7 @@ Pizza.prototype.price = function(){
   let pizzaMeat = this.meat.length;
   let pizzaVeggies = this.veggies.length;
   if (pizzaSize === "Small"){
-    return 12 + (pizzaMeat * 2) + (pizzaVeggies * 2);
+    return  12 + (pizzaMeat * 2) + (pizzaVeggies * 2);
   } else if (pizzaSize === "Medium"){
     return 14 + (pizzaMeat * 3) + (pizzaVeggies * 3);
   } else {
@@ -22,7 +22,7 @@ Pizza.prototype.price = function(){
 $(document).ready(function(){
   $("form#order").submit(function(event){
     event.preventDefault();
-    const size = $("#size").val();
+    let size = $("#size").val();
     let meat = [];
     let veggies = [];
     $("input:checkbox[name=meat]:checked").each(function(){
@@ -33,6 +33,7 @@ $(document).ready(function(){
     });
     let orderPizza = new Pizza(size, meat, veggies);
     let pizzaCost = orderPizza.price();
+    $(".size").text(orderPizza.size);
     $(".meat").text(orderPizza.meat);
     $(".veggies").text(orderPizza.veggies);
     $(".cost").text(pizzaCost);
