@@ -13,7 +13,7 @@
 
 1. The program will generage a pizza object with properities for size and toppings. Prototypes will be used to add toppings based on
 selected items from the user (at least that's the idea).
-2. 
+2. The program will provide the user with a checkbox for various toppings, the UI logic will check for each checked item and return it on the HTML page through an array. Each topic will have it's own label and set of checkboxes.
 
 
 ## Description
