@@ -33,23 +33,29 @@
           <option>Medium</option>
           <option>Large</option>
         </select>
-      <span class = "important"><label for="Extra Cheese">Extra Cheese</label></span><br>
-      <input type="checkbox" name="topping" value="Mozzarella"> Mozzarella<br>
-      <input type="checkbox" name="topping" value="Provolone"> Provolone<br>
-      <input type="checkbox" name="topping" value="Parmesan"> Parmesan<br>
-      <span class = "important"><label for="meat">Meats</label></span><br>
-      <input type="checkbox" name="topping" value="Pepperoni"> Pepperoni<br>
-      <input type="checkbox" name="topping" value="Canadian Bacon"> Canadian Bacon<br>
-      <input type="checkbox" name="topping" value="Chicken"> Chicken<br>
-      <input type="checkbox" name="topping"value="Italian Sausage"> Italian Sausage<br>
-      <input type="checkbox" name="topping" value="Bacon"> Bacon<br>
-      <span class = "important"><label for="veggies">Veggies</label></span><br>
-      <input type="checkbox" name="topping" value="Spinach"> Spinach<br>
-      <input type="checkbox" name="topping" value="Kale"> Kale<br>
-      <input type="checkbox" name="topping" value="Mushrooms"> Mushrooms<br>
-      <input type="checkbox" name="topping" value="Olives"> Olives<br>
-      <input type="checkbox" name="topping" value="Peppers"> Peppers<br>
-      <button class = "button" type = "submit">Order your pizza!</button>
+      <div class = "cheese">
+        <span class = "important"><label for="Extra Cheese">Extra Cheese</label></span><br>
+        <input type="checkbox" name="topping" value="Mozzarella"> Add Mozzarella<br>
+        <input type="checkbox" name="topping" value="Provolone"> Add Provolone<br>
+        <input type="checkbox" name="topping" value="Parmesan"> Add Parmesan<br>
+      </div>
+      <div class = "meat">
+        <span class = "important"><label for="meat">Meats</label></span><br>
+        <input type="checkbox" name="topping" value="Pepperoni"> Pepperoni<br>
+        <input type="checkbox" name="topping" value="Canadian Bacon"> Canadian Bacon<br>
+        <input type="checkbox" name="topping" value="Chicken"> Chicken<br>
+        <input type="checkbox" name="topping"value="Italian Sausage"> Italian Sausage<br>
+        <input type="checkbox" name="topping" value="Bacon"> Bacon<br>
+      </div>
+      <div class = "veggies">
+        <span class = "important"><label for="veggies">Veggies</label></span><br>
+        <input type="checkbox" name="topping" value="Spinach"> Spinach<br>
+        <input type="checkbox" name="topping" value="Kale"> Kale<br>
+        <input type="checkbox" name="topping" value="Mushrooms"> Mushrooms<br>
+        <input type="checkbox" name="topping" value="Olives"> Olives<br>
+        <input type="checkbox" name="topping" value="Peppers"> Peppers<br>
+      </div>
+      <button class = "button" type = "submit" id = "subOrder">Order your pizza!</button>
     </form>
     <p>Your order:</p>
     <p>Size: <span class = "size"></span></p>

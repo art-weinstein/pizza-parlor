@@ -1,13 +1,14 @@
-# My First Webpage
+# Pizza Parlor
 
 ### By Art Weinstein
 
-### A basic webpage created as a first student project at Epicodus.
+### A pizza building webpage used to practice object-oriented programming
 
 ## Technologies Used
 
 * HTML
 * CSS
+* JavaScript
 
 ## Specs
 
@@ -20,7 +21,7 @@ into the topping property in the pizza object and displayed.
 
 ## Description
 
-This basic webpage contains a quick introduction on what I should learn during my tenure at Epicodus, as well as a list of my favorite places and picture of an adorable kitten.
+This webpage allows the user to "order" a pizza via use of checkboxes, giving the user options of adding cheese, meat and veggies. The page will refresh every time a new order is submitted, with price values based on size and amount of toppings. The page will update accordingly each time a new topping is selected and the order your pizza button is pressed. The program makes use of object-oriented programming, and uses a pizza constructor with cost and topping properties. 
 
 ## Setup/Installation Requirements
 

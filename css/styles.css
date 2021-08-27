@@ -31,3 +31,21 @@ body {
   background-color: rgb(27, 4, 90);
   padding: 7px;
 }
+
+.cheese{
+  color: blanchedalmond;
+}
+
+.meat{
+  color: rgb(161, 132, 98);
+}
+
+.veggies {
+  color: rgb(104, 160, 104);
+}
+
+#subOrder {
+  font-weight: bolder;
+  color: rgb(39, 6, 38);
+  background-color: darkorange;
+}
