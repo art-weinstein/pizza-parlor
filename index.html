@@ -11,6 +11,12 @@
   <div class = "container">
     <h1>Build your pizza!</h1>
     <form id="order">
+      <span class = "important"><label for="size">Select your size:</label></span>
+      <select class ="form-control" id="size">
+        <option>Small</option>
+        <option>Medium</option>
+        <option>Large</option>
+      </select>
       <span class = "important"><label for="meat">Meats</label></span><br>
       <input type="checkbox" name="meat" value="Pepperoni"> Pepperoni<br>
       <input type="checkbox" name="meat" value="Italian Sausage"> Italian Sausage<br>
@@ -24,6 +30,7 @@
       <button class = "button" type = "submit">Order your pizza!</button>
     </form>
     <p>Your order:</p>
+    <p>Size <span id = "size"></span></p>
     <p>Meat(s) <span class="meat"></span></p>
     <p>Veggie(s) <span class ="veggies"></span></p>
     <p>Total <span class = "cost"></span></p>
