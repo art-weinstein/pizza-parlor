@@ -10,15 +10,15 @@
 <body>
   <div class = "container">
     <h1>Build your pizza!</h1>
-    <span class = "important"><label for="toppings">Toppings</label></span><br>
-      <label for="pepperoni">Pepperoni</label>
-      <input type="checkbox" id="pepperoni"><br>
-      <label for="italian">Italian Sausage</label>
-      <input type="checkbox" id="italian"><br>
-      <label for="Spinach">Spinach</label>
-      <input type="checkbox" id="spinach"><br>
+    <form id="order">
+      <span class = "important"><label for="meat">Meats</label></span><br>
+      <input type="checkbox" name="meat" value="Pepperoni"> Pepperoni<br>
+      <input type="checkbox" name="meat" value="Italian Sausage"> Italian Sausage<br>
+      <input type="checkbox" name="meat" value="Bacon"> Bacon<br>
       <button class = "button" type = "submit">Order your pizza!</button>
     </form>
+    <p>Your order:</p>
+    <p>Meat(s) <span class="meat"></span></p>
   </div>
 </body>
 </html>
